@@ -1,0 +1,64 @@
+[
+{
+  "pk": 1,
+  "fields": {
+    "_balance": "100.00",
+    "number": "1111222233334444",
+    "pin": "1234",
+    "is_locked": false,
+    "try_count": 0
+  },
+  "model": "card.card"
+},
+{
+  "pk": 2,
+  "fields": {
+    "_balance": "50.00",
+    "number": "2222333344441111",
+    "pin": "1234",
+    "is_locked": false,
+    "try_count": 0
+  },
+  "model": "card.card"
+},
+{
+  "pk": 3,
+  "fields": {
+    "_balance": "0.00",
+    "number": "3333444411112222",
+    "pin": "1234",
+    "is_locked": false,
+    "try_count": 0
+  },
+  "model": "card.card"
+},
+{
+  "pk": 4,
+  "fields": {
+    "_balance": "10.00",
+    "number": "4444111122223333",
+    "pin": "1234",
+    "is_locked": true,
+    "try_count": 0
+  },
+  "model": "card.card"
+},
+{
+  "pk": 1,
+  "fields": {
+    "last_login": "2015-07-04T15:27:57.522Z",
+    "groups": [],
+    "last_name": "",
+    "email": "",
+    "is_superuser": true,
+    "username": "admin",
+    "password": "pbkdf2_sha256$20000$QlNXGavnWRO3$j4XbQRxX2QnxwYBsfLS9VqLI/qdOF1WyNzYRtISY12E=",
+    "is_active": true,
+    "is_staff": true,
+    "user_permissions": [],
+    "date_joined": "2015-07-04T11:34:12.059Z",
+    "first_name": ""
+  },
+  "model": "auth.user"
+}
+]

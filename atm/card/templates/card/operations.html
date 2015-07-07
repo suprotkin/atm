@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <h1>{% trans 'operation list'|title %}</h1>
+        <a href="{% url 'card:balance' %}" class="btn btn-default" id="btn-balance">{% trans 'balance'|title %}</a>
+        <a href="{% url 'card:cash_out' %}" class="btn btn-default" id="btn-cash_out">{% trans 'cash out'|title %}</a>
+        <a href="{% url 'card:exit' %}" class="btn btn-default" id="btn-exit">{% trans 'exit'|title %}</a>
+    </div>
+</div>
+
+{% endblock content %}

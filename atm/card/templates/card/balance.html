@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>{% trans 'card balance'|title %}</h1>
+        <div class="row">
+            <div class="col-md-2">
+                {% trans 'card number'|title %}:
+            </div>
+            <div class="col-md-10">
+                {{ card }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                {% trans 'time'|title %}:
+            </div>
+            <div class="col-md-10">
+                {{ time }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                {% trans 'card balance'|title %}:
+            </div>
+            <div class="col-md-10">
+                {{ balance }}
+            </div>
+        </div>
+        {% if cash_out %}
+        <div class="row">
+            <div class="col-md-2">
+                {% trans 'cash out'|title %}:
+            </div>
+            <div class="col-md-10">
+                {{ cash_out }}
+            </div>
+        </div>
+        {% endif %}
+        <a href="{% url 'card:index' %}" class="btn btn-default" id="btn-balance">{% trans 'back'|title %}</a>
+        <a href="{% url 'card:exit' %}" class="btn btn-default" id="btn-exit">{% trans 'exit'|title %}</a>
+    </div>
+</div>
+
+{% endblock content %}

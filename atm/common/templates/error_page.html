@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>{{ custom_error_message }}</h1>
+            <a href="{{ redirect_to }}" class="btn btn-success btn-lg">{% trans 'back'|capfirst %}</a>
+        </div>
+    </div>
+{% endblock %}
